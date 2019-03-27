@@ -8,10 +8,15 @@
     <artifactId>zem</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>../child1</module>
-        <module>../child2</module>
-    </modules>
+    <profiles>
+        <profile>
+            <id>build</id>
+            <modules>
+                <module>../child1</module>
+                <module>../child2</module>
+            </modules>
+        </profile>
+    </profiles>
 
 
 </project>
